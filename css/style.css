@@ -1,3 +1,4 @@
+/* ESTILOS GENERALES DEL BODY */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     color: #111111;
@@ -7,16 +8,24 @@ body {
     line-height: 1.6;
 }
 
-/* --- CABECERA Y EL MENU DE NAVEGACION--- */
-
+/* CABECERA Y EL MENU DE NAVEGACION */
 header {
     background: #242424;
+
     color: white;
     padding: 5px ;
     align-items: center;
     text-size-adjust: 50px;
+
+    background: radial-gradient(circle,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(30, 30, 30, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+    );
+
 }
 
+/* Logo dentro del header */
 header .logo {
     display: flex;
     align-items: center;
@@ -25,10 +34,12 @@ header .logo {
     text-shadow: #a7ff03 1px 1px 5px;
 }
 
+/* Título principal del header */
 header h1 {
     font-size: 3rem;
 }
 
+/* Lista de navegación */
 nav ul {
     list-style: none;
     display: flex;
@@ -36,6 +47,7 @@ nav ul {
     gap: 20px;
 }
 
+/* Estilo de los enlaces del nav */
 nav a {
     text-decoration: none;
     text-transform: uppercase;
@@ -44,11 +56,12 @@ nav a {
     transition: color 0.3s ease;
 }
 
+/* Hover de los enlaces del nav */
 nav a:hover {
     color: #a7ff03; 
 }
 
-/* --- CONTENIDO --- */
+/* Contenido */
 .container {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -56,6 +69,7 @@ nav a:hover {
     padding: 10px;
 }
 
+/* Barra lateral */
 aside {
     background: #f0f0f0;
     padding: 20px ;
@@ -90,12 +104,39 @@ aside a:hover {
     color: #a7ff03;
 }
 
+/* Cartel de Info */
+.cartel-info {
+    background-color: #242424;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.cartel-info h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #a7ff03;
+}
+
+.cartel-info p {
+    margin-bottom: 0;
+}
+
+.cartel-info a {
+    color: #a7ff03;
+    text-decoration: underline;
+}
+
+/* Contenido */
 main h2 {
     margin-bottom: 15px;
     text-align: center;
 }
 
-/* --- NOTICIAS --- */
+/* Noticias */
 article {
     background: white;
     border: 1px solid #ddd;
@@ -146,7 +187,7 @@ article:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* --- FOOTER --- */
+/* Footer */
 footer {
     background: #242424;
     color: white;
@@ -155,7 +196,7 @@ footer {
     margin-top: 20px;
 }
 
-/* --- CONTACTO.HTML ---*/
+/* Formulario de Contacto */
 form {
     background: white;
     padding: 20px;
@@ -198,7 +239,7 @@ button:hover {
     background: #a7ff03; 
 }
 
-/* ---TODAS LAS NOTICIAS.HTML ---*/
+/* Botón para las noticias */
 a.button {
     display: inline-block;
     text-decoration: none;
@@ -215,6 +256,7 @@ a.button:hover {
     background: #a7ff03;         
 }
 
+/* Tabla diseño */
 table.diseño {
     width: 100%;
     border-collapse: collapse;
@@ -229,7 +271,7 @@ table.diseño th {
     padding: 12px;
 }
 
-/* ------- DISEÑO RESPONSIVO ------- */
+/* Diseño responsivo */
 @media (max-width: 900px) {
     .container {
         grid-template-columns: 1fr; 
@@ -306,4 +348,5 @@ table.diseño th {
         font-size: 0.85rem; 
         padding: 6px;
     }
+
 }
